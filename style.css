@@ -129,8 +129,23 @@ header{
 
 /* SECTIONS */
 
+#about p{
+    max-width:900px;
+    margin:0 auto;
+    line-height:1.9;
+    font-size:17px;
+    color:#555;
+    text-align:center;
+}
+
+.about-tagline{
+    margin-top:20px;
+    font-size:20px;
+    color:var(--primary);
+}
+
 .section{
-    padding:90px 8%;
+    padding:70px 8%;
 }
 
 .section h2{
@@ -141,10 +156,13 @@ header{
 }
 
 .section p{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
+    max-width:900px;
+    margin:0 auto;
+    line-height:1.9;
+    font-size:18px;
+    color:#555;
+    text-align:justify;
+    text-align-last:center;
 }
 
 .section-subtitle{
@@ -294,10 +312,16 @@ header{
 
 }
 
+.company-name{
+    color: var(--secondary);
+    font-weight: 600;
+}
 
 .address{
+    color: #d6d6d6;
     margin-top:20px;
 }
+
 
 /* FOOTER */
 
