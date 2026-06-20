@@ -1,6 +1,6 @@
 :root{
-    --primary:#7b4f2c;
-    --secondary:#c89f65;
+    --primary:#A32124;     /* logo red */
+    --secondary:#C89F65;   /* lighter red */
     --dark:#1f1f1f;
     --light:#f8f8f8;
 }
@@ -45,20 +45,12 @@ nav{
 
 }
 
-/* .logo{
-    color:white;
-    font-size:26px;
-    font-weight:700;
-} */
-
 .logo img{
-
-    width:220px;
-
+    width:190px;
     height:auto;
-
     display:block;
-
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
 .nav-links{
@@ -122,9 +114,15 @@ header{
     display:inline-block;
     padding:14px 32px;
     border-radius:40px;
-    background:var(--secondary);
+    background:var(--primary);
     color:white;
     text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#861b1d;
+    transform:translateY(-2px);
 }
 
 /* SECTIONS */
@@ -142,6 +140,7 @@ header{
     margin-top:20px;
     font-size:20px;
     color:var(--primary);
+    font-weight:600;
 }
 
 .section{
@@ -152,7 +151,8 @@ header{
     text-align:center;
     color:var(--primary);
     font-size:38px;
-    margin-bottom:20px;
+    margin-bottom:40px;
+    position:relative;
 }
 
 .section p{
@@ -262,7 +262,7 @@ header{
 }
 
 .product-details h4{
-    color:#7b4f2c;
+    color:var(--primary);
     margin-bottom:10px;
 }
 
@@ -284,7 +284,8 @@ header{
 }
 
 .contact h2{
-    margin-bottom:30px;
+    color:var(--secondary);
+    margin-bottom:40px;
 }
 
 .contact p{
