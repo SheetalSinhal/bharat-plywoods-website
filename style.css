@@ -1,6 +1,6 @@
 :root{
-    --primary:#7b4f2c;
-    --secondary:#c89f65;
+    --primary:#A32124;     /* logo red */
+    --secondary:#C89F65;   /* lighter red */
     --dark:#1f1f1f;
     --light:#f8f8f8;
 }
@@ -45,20 +45,12 @@ nav{
 
 }
 
-/* .logo{
-    color:white;
-    font-size:26px;
-    font-weight:700;
-} */
-
 .logo img{
-
-    width:220px;
-
+    width:190px;
     height:auto;
-
     display:block;
-
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
 .nav-links{
@@ -122,29 +114,59 @@ header{
     display:inline-block;
     padding:14px 32px;
     border-radius:40px;
-    background:var(--secondary);
+    background:var(--primary);
     color:white;
     text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#861b1d;
+    transform:translateY(-2px);
 }
 
 /* SECTIONS */
 
+#about p{
+    max-width:900px;
+    margin:0 auto;
+    line-height:1.7;
+    font-size:17px;
+    color:#555;
+    text-align:center;
+}
+
+#about .about-tagline{
+    margin-top:5px;
+    font-size:20px;
+    color: var(--primary);
+    font-weight:600;
+}
+
+#about strong{
+    color: var(--primary);
+}
+
 .section{
-    padding:90px 8%;
+    padding:70px 8%;
 }
 
 .section h2{
     text-align:center;
     color:var(--primary);
     font-size:38px;
-    margin-bottom:20px;
+    margin-bottom:25px;
+    position:relative;
 }
 
 .section p{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
+    max-width:900px;
+    margin:0 auto;
+    line-height:1.9;
+    font-size:18px;
+    color:#555;
+    text-align:justify;
+    text-align-last:center;
 }
 
 .section-subtitle{
@@ -244,7 +266,7 @@ header{
 }
 
 .product-details h4{
-    color:#7b4f2c;
+    color:var(--primary);
     margin-bottom:10px;
 }
 
@@ -266,7 +288,8 @@ header{
 }
 
 .contact h2{
-    margin-bottom:30px;
+    color:var(--secondary);
+    margin-bottom:40px;
 }
 
 .contact p{
@@ -294,10 +317,33 @@ header{
 
 }
 
-
-.address{
-    margin-top:20px;
+.company-name{
+    color: var(--secondary);
+    font-weight: 600;
 }
+
+
+.location-link{
+    text-decoration:none;
+    color:inherit;
+    display:inline-block;
+}
+
+.location-link:hover{
+    opacity:0.9;
+}
+
+.location-link .fa-location-dot{
+    color:#d6d6d6;
+    font-size:22px;
+    margin-right:8px;
+}
+
+.location-link:hover .fa-location-dot{
+    transform:scale(1.1);
+    transition:.3s;
+}
+
 
 /* FOOTER */
 
