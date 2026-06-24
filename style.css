@@ -130,17 +130,21 @@ header{
 #about p{
     max-width:900px;
     margin:0 auto;
-    line-height:1.9;
+    line-height:1.7;
     font-size:17px;
     color:#555;
     text-align:center;
 }
 
-.about-tagline{
-    margin-top:20px;
+#about .about-tagline{
+    margin-top:5px;
     font-size:20px;
-    color:var(--primary);
+    color: var(--primary);
     font-weight:600;
+}
+
+#about strong{
+    color: var(--primary);
 }
 
 .section{
@@ -151,7 +155,7 @@ header{
     text-align:center;
     color:var(--primary);
     font-size:38px;
-    margin-bottom:40px;
+    margin-bottom:25px;
     position:relative;
 }
 
@@ -318,9 +322,26 @@ header{
     font-weight: 600;
 }
 
-.address{
-    color: #d6d6d6;
-    margin-top:20px;
+
+.location-link{
+    text-decoration:none;
+    color:inherit;
+    display:inline-block;
+}
+
+.location-link:hover{
+    opacity:0.9;
+}
+
+.location-link .fa-location-dot{
+    color:#d6d6d6;
+    font-size:22px;
+    margin-right:8px;
+}
+
+.location-link:hover .fa-location-dot{
+    transform:scale(1.1);
+    transition:.3s;
 }
 
 
